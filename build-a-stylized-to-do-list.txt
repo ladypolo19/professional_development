@@ -1,0 +1,118 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Styled To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>My FreeCodeCamp To-Do list</h1>
+
+<div>
+    <ul class="todo-list">
+        <li>
+            <input type="checkbox" id="documentation">
+            <label for="documentation">Read documentation</label>
+            <ul class="sub-item">
+                <li>
+                    <a class='sub-item-link' href="https://github.com/ladypolo19" target="_blank">Web documentation</a>
+                </li>
+            </ul>
+        </li>
+        
+        <li>
+            <input type="checkbox" id="video">
+            <label for="video">Video Comprehension</label>
+            <ul class="sub-item">
+                 <li>
+                    <a class='sub-item-link' href="https://github.com/ladypolo19" target="_blank">Video sessions</a>
+                </li>
+            </ul>
+        </li>
+        
+        <li>
+            <input type="checkbox" id="coding">
+            <label for="coding">Coding</label>
+            <ul class="sub-item">
+                 <li>
+                    <a class='sub-item-link' href="https://github.com/ladypolo19" target="_blank">Explore IDE</a>
+                </li>
+            </ul>
+        </li>
+        
+        <li>
+            <input type="checkbox" id="sessions">
+            <label for="sessions">Follow Sessions</label>
+            <ul class="sub-item">
+                 <li>
+                    <a class='sub-item-link' href="https://github.com/ladypolo19" target="_blank">Different topics</a>
+                </li>
+            </ul>
+        </li>        
+    </ul>
+</div>
+
+</body>
+
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+  background-color: pink;
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  text-align: center;
+}
+
+.todo-list{
+  list-style-type: none;
+  padding: 0;
+}
+
+.todo-list li{
+    margin-bottom: 15px;
+}
+
+label {
+    padding-left: 10px;
+}
+
+.sub-item {
+    list-style-type: none;
+    padding-left: 35px; 
+}
+
+a.sub-item-link {
+  text-decoration: none;
+  color:blue;
+}
+
+a.sub-item-link:visited {
+  color: green;
+}
+
+a.sub-item-link:hover {
+  color: red;
+}
+
+a.sub-item-link:focus {
+  outline: 2px solid orange;
+}
+
+a.sub-item-link:active {
+  color: purple;
+}
+
+
+
+
+
+** end of undefined **
+
