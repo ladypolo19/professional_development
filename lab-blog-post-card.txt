@@ -1,0 +1,73 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post Card</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="blog-post-card">
+        <img class="post-img" src="https://cdn.freecodecamp.org/curriculum/labs/cover-photo.jpg" alt="An image of a laptop">
+        <div class="post-content">
+            <h2 class="post-title">Learn to code 2025</h2>
+            <p class="post-excerpt">Nowadays is important to understand and develop our own web page.</p>
+            
+            <a class="read-more" type="button">Read More</a>
+        </div>
+    </div>
+</body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+.blog-post-card{
+  background-color: white;
+  text-align: center;
+  border-radius: 30px;
+  width: 500px;
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+.post-img{
+  border-bottom: 3px solid blue;
+  background-size: cover;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.post-content{
+  background-color: #86d9fd;
+  padding: 10px;
+  text-align: center;
+  margin: 20px;
+  border-radius: 20px;
+}
+
+.post-title, .post-excerpt {
+  color: aliceblue;
+  margin: 1px;
+}
+
+a.read-more {
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  margin: 10px;
+  border-radius: 15px;
+  padding: 5px;
+  display: inline-block;
+}
+
+.read-more:hover {
+  background-color: red;
+  color: yellow;
+}
+
+** end of undefined **
+
