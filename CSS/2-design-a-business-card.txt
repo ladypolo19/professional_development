@@ -1,0 +1,76 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Business Card</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="business-card">
+    <img class="profile-image"
+    src="https://cdn.freecodecamp.org/curriculum/labs/flower.jpg" alt="pretty pink flower">
+    
+    <p class="full-name">Lady Polo</p>
+    <p class="designation">Data Analyst</p>
+    <p class="company">Freelancer</p>
+
+    <hr>
+
+    <p>ladypolo19@gmail.com</p>
+    <p>555-555-5555</p>
+
+    <a href="ladypolo19.github.io">Portfolio</a>
+
+    <hr>
+   
+        <div class="social-media">
+        <h2>Connect with me</h2>
+        <a href="https://www.twitter.com/">Twitter</a>
+        <a href="https://www.linkedin.com/in/lady-geraldine-polo-alarc%C3%B3n-089a63104/?locale=fr_FR">LinkedIn</a>
+        <a href="https://github.com/ladypolo19">GitHub</a>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+  background-color: rosybrown;
+  font-family: Arial, sans-serif;
+}
+
+p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.business-card {
+  width: 300px;
+  background-color: pink;
+  padding: 20px;
+  margin: 100px;
+  text-align: center;
+  font-size: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+** end of undefined **
+
