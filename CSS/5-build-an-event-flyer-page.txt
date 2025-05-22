@@ -1,0 +1,103 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Build an Event Flyer Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <img src="https://cdn.freecodecamp.org/curriculum/labs/event.jpg" alt="Street decorations">
+    <h1>>> Cake Party <<</h1>
+    <p><strong>When:</strong> Tuesday 12th March</p>
+    <p><strong>Where:</strong> Evergreen Street</p>
+  </header>
+
+  <hr>
+
+  <main>
+    <section>
+      <h2>Circle cakes</h2>
+      <ul>
+        <li>Strawberry</li>
+        <li>Chocolate</li>
+        <li>Lemon Pie</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Square cakes</h2>
+      <ul>
+        <li>Brownie</li>
+        <li>Tiramisu</li>
+        <li>Banana</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <hr>
+
+  <footer>
+    All rights reserved 2025
+  </footer>
+
+</body>
+
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+header {
+  margin-bottom: 20px;
+}
+
+body {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: aliceblue;
+  text-align: center;
+  width: 100vw;
+  min-height: calc(100vh - 100px);
+}
+
+img {
+ border-radius: 20px;
+ border: 3px solid blue;
+}
+
+section, hr {
+  width: 50%;
+}
+
+hr {
+  height: 1px;
+}
+
+ul{
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+   margin: 5px;
+}
+
+footer {
+  padding: 10px;
+}
+
+
+** end of undefined **
+
