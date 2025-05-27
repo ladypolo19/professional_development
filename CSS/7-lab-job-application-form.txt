@@ -1,0 +1,134 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Job Application Form</h1>
+    <div class="container">
+        <form>
+            <label for="name">Full Name: </label>
+            <input required
+            id="name"
+            name="name"
+            type="text" 
+            placeholder="Enter your name"
+            aria-required= "true" \>
+
+            <br>
+
+            <label for="email">Email: </label>
+            <input required
+            id="email"
+            name="email"
+            type="email" 
+            placeholder="Enter your email"
+            aria-required= "true" \>
+
+            <br>
+
+            <label for="position">Position:</label>
+        <select id="position" required>
+            <option selected value="select-position">Select a position</option>
+            <option value="developer">Developer</option>
+            <option value="analyst">Analyst</option>
+        </select>
+
+        <fieldset class="radio-group">
+            <legend>Availability</legend>
+        
+            
+            <input 
+            id="fulltime" 
+            type="radio" 
+            name="availability" 
+            value="fulltime" />
+            <label for="fulltime">Full-time</label>
+            
+            
+            <input 
+            id="parttime" 
+            type="radio" 
+            name="availability" 
+            value="parttime" />
+            <label for="parttime">Part-time</label>
+            
+         </fieldset>
+
+        <fieldset>
+            <legend>Why do you want this job?</legend>
+            <label for="message">Just your motivations:</label>
+            <br>
+            <textarea cols="50" rows="10" 
+            name="message" id="message" placeholder="Here your comments..."></textarea>
+        </fieldset>
+
+        <button type="submit">Submit</button>
+
+        </form>
+    </div>
+</body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 40px;
+  text-align: center;
+  background-color: aliceblue;
+}
+
+.container {
+  margin: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /*le da la vista a una box de una manera muy sutil*/
+}
+
+input:focus, textarea:focus {
+    border-color: navy;
+    outline: none;
+}
+
+input:invalid, select:invalid, textarea:invalid {
+    border-color: red;
+    outline: none;
+}
+
+input:valid, select:valid, textarea:valid {
+    border-color: green;
+    outline: none;
+}
+
+button:hover {
+  background-color: khaki;
+  transform: scale(1.1); /*agranda el elemento*/
+}
+
+
+
+.radio-group input[type="radio"]:checked {
+    border-color: #007BFF;
+    background-color: #007BFF;
+    color: #fff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.radio-group input[type="radio"]:checked + label {
+    color: blue;
+}
+
+input:nth-child(1) {
+    border-radius: 20px;
+}
+
+** end of undefined **
+
