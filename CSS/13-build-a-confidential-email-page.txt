@@ -1,0 +1,54 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Confidential Email</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<main id="email">
+  <div id="confidential">CONFIDENTIAL</div>
+  <div id="top-secret">TOP SECRET</div>
+  <p>To: <span class="blurred">Our beloved Gustavo</span></p>
+  <p>Hope this email finds you well. I know that you live  in <span class="blurred">your imagination.</span></p>
+  <p>Please answeer this email with <span class="blurred">a meow!</span></p>
+  
+  <p>Sincerely,</p>
+  <p><span class="blurred">Windows' cute cat</span></p>
+</main>
+</body>
+
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+#email {
+  padding: 50px;
+  margin-top: 50px;
+  width: 500px;
+  border: 2px;
+  box-shadow: 0 0 1px 1px #b20403;
+  box-sizing: border-box; /*crea una caja en el elemento y lo align it*/
+}
+
+#confidential, #top-secret {
+  display: inline-block;
+  padding: 10px;
+  margin-left: 5px;
+  border: 1px solid black;
+  transform: rotate(-30deg);
+}
+
+.blurred {
+  filter: blur(3px);
+}
+
+** end of undefined **
+
