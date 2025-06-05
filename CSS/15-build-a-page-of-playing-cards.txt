@@ -1,0 +1,119 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Playing Cards</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <main id="playing-cards">
+    <div class="card">3 ♠
+      <div class="left">♠</div>
+      <div class="middle">♠</div>
+      <div class="right">♠</div>
+    </div>
+
+    <div class="card">5 ♥
+      <div class="left">♥ ♥</div>
+      <div class="middle">♥</div>
+      <div class="right">♥ ♥</div>
+    </div>
+
+    <div class="card">6 ♦
+      <div class="left">♦ ♦</div>
+      <div class="middle">♦ ♦</div>
+      <div class="right">♦ ♦</div>
+    </div>
+  </main>
+</body>
+
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+font-family: sans-serif; /* Una fuente legible*/
+  margin: 0;
+  background: linear-gradient(45deg, pink, lightpink);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Para que el fondo ocupe toda la pantalla */
+}
+
+#playing-cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: space-between;
+  justify-content: center;
+  gap: 20px;
+  margin: 0 auto;
+  padding: 30px 10px;
+  font-size: 25px;
+}
+/* por si agrego las dos cartas adicionales abajo
+ #playing-cards::after {
+  content: "";
+  width: 160px;
+}
+*/
+
+.card {
+width: 160px;
+height: 230px;
+display: flex;
+justify-content: space-between;
+border: 1px solid #ccc; /*borde mas natural*/
+border-radius: 10px;
+background-color: white;
+box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /*efecto de caja mas leve*/
+flex-direction: column;
+}
+
+.left {
+align-self: flex-start; /*ir alineado con respecto al parent*/
+font-size: 40px;
+line-height: 1; /* Reduce el espacio alrededor del símbolo */
+}
+
+.middle {
+align-self: center;
+flex-direction: column; /*mostar las cajas hijas en una columna*/
+font-size: 40px;
+line-height: 1;
+}
+
+.right {
+align-self: flex-end;
+font-size: 40px;
+line-height: 1;
+}
+
+/* Estilos específicos para los corazones */
+.card:nth-child(2) .left,
+.card:nth-child(2) .middle,
+.card:nth-child(2) .right {
+  color: red;
+  justify-content: center;
+}
+
+/* Estilos específicos para los diamantes */
+.card:nth-child(3) .left,
+.card:nth-child(3) .middle,
+.card:nth-child(3) .right {
+  color: red;
+}
+
+** end of undefined **
+
