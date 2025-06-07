@@ -1,0 +1,94 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <title>My FreeCodeCamp Newspaper</title>
+  <link href="./styles.css" rel="stylesheet">
+</head>
+<body>
+  <div class="newspaper">
+    <div class="name">Rennes Newspaper</div>
+    <div class="divider"></div>
+    <div class="date">26/04/2025</div>
+    <div class="headline">Who let Gustavo out?</div>
+    <div class="sub-headline">Gustavo himself gave his testimony.</div>
+    <div class="author">By G. A. B.</div>
+    <p class="text"><i>Il signorino</i> as known as Tavo is escaping every time the door is open. This situation is frequently happening when Mr. Rodriguez arrives from his work.</p>
+    <p class="text">His declaration, with an insidius tone: <q>Meow meow meow meow</q>.</p>
+    <p class="text">And he took his skate and did a spin flip. This was the last time it shows his true kitty colors.</p>
+  </div>
+</body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 24px;
+  background-color: aliceblue;
+}
+
+.newspaper {
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  border: 2px solid black;
+  margin: 20px 10px;
+  padding: 20px 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  background-color:white;
+}
+
+.name {
+  font-size: 2rem;
+  font-family: "Times New Roman", serif;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.date {
+  text-align: right;
+}
+
+.author {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.headline {
+  font-size: 2em; /*dos veces el valor de parent*/
+  font-weight: bold; /*para la negrita*/
+}
+
+.sub-headline {
+  font-size: 1.5em; /*1.5 veces el valor de parent*/
+  font-weight: 100; /*para la negrita*/
+  font-style: italic;
+}
+
+.text {
+  text-indent: 20px;
+  line-height: 2em;
+}
+
+.text::first-letter {
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.divider {
+  border-bottom: 1px solid #888989;
+  margin: 2px 0;
+  height: 5px;
+  background-color: black;
+}
+
+** end of undefined **
+
