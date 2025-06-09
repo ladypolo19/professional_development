@@ -1,0 +1,80 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tribute Page</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <h1 id="title">Marie Curie</h1>
+    <h3><em>Pioneer of Radioactivity</em></h3>
+    <main id="main">
+      <div id="img-div">
+        <img id="image" src="https://raw.githubusercontent.com/ladypolo19/professional_development/main/ressources/feature_marie-sk_odowska-curie.jpg" alt="A picture of Pierre and Marie Curie">
+      
+      <figcaption id="img-caption">Pierre and Marie Curie, 1895</figcaption>
+      </div>
+      <div id="tribute-info">
+        <h2>Highlights from her remarkable life:</h2>
+        <ul>
+          <li>Pioneering Scientist: Marie Curie conducted groundbreaking research on radioactivity. In fact, she coined the term "radioactivity."</li>
+          <li>First Woman Nobel Laureate: She was the first woman to win a Nobel Prize, achieving this in Physics in 1903 alongside her husband Pierre Curie and Henri Becquerel for their work on radioactivity.</li>
+          <li>Only Person to Win Nobel Prizes in Two Different Scientific Fields: Her exceptional contributions were recognized again in 1911 when she received the Nobel Prize in Chemistry for her discovery of the elements polonium and radium.</li>
+          <li>Wartime Contributions: During World War I, Marie Curie championed the use of mobile X-ray units to diagnose injuries on the battlefield, personally training technicians and even driving the vehicles herself.</li>
+          <li>Dedication to Science: Despite facing significant sexism in the scientific community, she persevered in her research, often under difficult conditions. Her dedication ultimately led to advancements that transformed medicine and our understanding of the atom.</li>
+          <li>A Legacy of Inspiration: Marie Curie's life stands as a testament to the power of scientific curiosity, perseverance, and dedication to the betterment of humanity.</li>
+        </ul>
+      </div>
+      <p>If you want to know more details about her remarkable life, you can read <a id="tribute-link" target="_blank" href="https://musee.curie.fr/decouvrir/la-famille-curie/biographie-de-marie-curie">here</a>.</p>
+      <div id="img-div">
+      <img id="image" src="https://raw.githubusercontent.com/ladypolo19/professional_development/main/ressources/marie-curie.jpg" alt="A picture of Marie Curie">
+      <figcaption id="img-caption">Marie Curie, 1895</figcaption></div>
+    </main>
+  </body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+
+body {
+  background-color: aliceblue;
+  font-family: Arial, sans-serif
+}
+
+#title,h2, h3 {
+  text-align: center;
+}
+
+#img-div {
+  text-align:center;
+}
+
+
+#image {
+display: block;
+margin: 0 auto;
+align-text: center;
+max-width: 100%;
+}
+li {
+  margin: 15px;
+  padding: 5px;
+}
+
+h3 {
+  margin-top: -10px;
+  font-size: 15px;
+}
+
+** end of undefined **
+
