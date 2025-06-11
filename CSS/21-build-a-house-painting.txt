@@ -1,0 +1,111 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Painting</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div>
+    <div id="sky"></div>
+    <div id="house">
+        <div id="chimney"></div>
+        <div id="roof"></div>
+        <div id="window-1"></div>
+        <div id="window-2"></div>
+        <div id="door"></div>
+    </div>
+    <div id="grass"></div>
+</div>
+</body>
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+#sky{
+  position: absolute;
+  top: 0;
+  width: 900px;
+  height: 600px;
+  background-color: #8fbeca;
+  z-index: -3;
+}
+
+#house {
+  position: relative;
+  width: 500px;
+  height: 400px;
+  background-color: pink;
+  border: 5px solid black;
+  margin-top: 50px;
+  margin-left: 250px;
+  z-index: 0;
+}
+
+#grass{
+  position: relative;
+  width: 900px;
+  height: 200px;
+  background-color: #9ae9a1;
+  z-index: -2;
+}
+
+#chimney {
+  position: absolute;
+  top: -50px;
+  right: 50px;
+  bottom:250px;
+  width: 100px;
+  height: 50px;
+  background-color: #f3a949;
+  border: 5px solid black;
+  z-index: -1;
+}
+
+#roof {
+  position: absolute;
+  top: 0;
+  width: 490px;
+  height: 120px;
+  background-color: darkred;
+  border: 5px solid white;
+}
+
+#window-1 {
+  position: absolute;
+  top: 150px;
+  left: 50px;
+  width: 150px;
+  height: 50px;
+  background-color: #9b553a;
+  border: 5px solid #543622;
+  }
+
+#window-2 {
+  position: absolute;
+  top: 150px;
+  right: 50px;
+  width: 150px;
+  height: 50px;
+  background-color: #9b553a;
+  border: 5px solid #543622;
+  }
+
+#door {
+  position: absolute;
+  top: 238px;
+  left: 200px;
+  bottom: 0;
+  width: 100px;
+  height: 160px;
+  background-color: #006663;
+  border: 1px solid #9ae9e1;
+}
+
+** end of styles.css **
+
