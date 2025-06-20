@@ -1,0 +1,148 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Magazine Layout</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <main class="magazine-cover">
+    <header class="title">Gustavo Fashion Magazine</header>
+    <section class="feature-article">
+      <h1>ASTRO: K-pop Band</h1>
+      <p>Astro is a South Korean boy band formed by Fantagio. They debuted on February 23, 2016, with the extended play Spring Up and were subsequently named as one of the best new K-pop acts of 2016 by Billboard. The group is composed of six members: MJ, Jinjin, Cha Eun-woo, Moon Bin, Rocky and Yoon San-ha.<p>
+    </section>
+    <section class="small-article1">
+      <h2>Last Album: All Yours</h2>
+      <p>On April 5, 2021, Astro released their second studio album All Yours. The group received a total of three music show wins for its title track "One": the first one on The Show on April 13; the second on Show Champion on April 14; and finally on M Countdown on April 15, making it their first win on the program. On June 10, All Yours became the first Astro album to be certified platinum by Gaon.</p>
+    </section>
+    <section class="small-article2">
+      <h2>Last Concert: The 4th Astroad to Seoul [Stargraphy]</h2>
+      <p>On April 13, 2025, Fantagio announced that ASTRO will be having their 4th ASTROAD Tour [Stargraphy], along with former member Rocky.
+On April 23, ASTRO announced that the tour will start on June 7 and 8, 2025 at Inspire Arena, Incheon, South Korea.
+On May 1, 2025, ASTRO announced the Japan dates on June 28 and 29 at MIZUHO PayPay Dome Fukuoka.</p>
+    </section>
+    <section class="cover-image">
+       <img id="image" src="https://raw.githubusercontent.com/ladypolo19/professional_development/main/ressources/20250601_211928.jpg" alt="A picture of ASTRO">
+    </section>
+  </main>
+</body>
+
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  color: midnightblue;
+  background-color: #aed6f1;
+  text-align: center;
+  display: flex;
+  min-height: 100vh; /*toda la altura del viewport*/
+}
+
+.title {
+  grid-area: title;
+  padding: 30px;
+  background-color: #1b4f72;
+  color: #ebf5fb;
+  border-radius: 25px;
+  margin: 25px;
+  letter-spacing: 10px;
+  font-size: 2.5rem;
+}
+
+.magazine-cover {
+  display: grid;
+  grid-template-areas: 
+  "title title title" 
+  "feature-article feature-article cover-image"
+  "small-article1 small-article2 cover-image";
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto 1fr 1fr;
+  gap: 10px;
+  width: 90vw;
+  max-width: 1200px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
+  background-color: #ebf5fb;
+  padding: 20px 20px;
+  margin: 20px 20px;
+}
+
+.feature-article {
+  grid-area: feature-article;
+  margin: 10px;
+  padding: 10px;
+  background-color: #aed6f1;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  border-radius: 18px;
+}
+
+.cover-image {
+  grid-area:  cover-image;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  overflow: hidden;
+  border-radius: 18px;
+}
+
+p {
+  text-align: justify; /*justificar el texto*/
+  margin: 10px 0; /*margen vertical*/
+  padding: 0; /* evitar que se duplique*/
+  font-size: 1.2rem;
+  line-height: 1.6; /*Interlineado*/
+}
+
+.cover-image img {
+  width: 100%; /*100% ancho*/
+  height: 100%; /*100% altura*/
+  object-fit: cover; /*hace que no haya distorsion*/
+  display: block; /*Elimina cualquier espacio extra debajo de la imagen*/
+  border-radius: 18px; /*Aplica el mismo border-radius que al contenedor*/
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+h2, h3 {
+  font-size: 1.6rem;
+  margin-bottom: 8px;
+}
+
+.small-article1, .small-article2 {
+  margin: 10px;
+  padding: 10px;
+  background-color: #aed6f1;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  border-radius: 18px;
+}
+
+
+
+** end of styles.css **
+
