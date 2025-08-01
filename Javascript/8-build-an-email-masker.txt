@@ -1,0 +1,17 @@
+** start of script.js **
+
+function maskEmail(email) {
+  let mail = email.slice(0, email.indexOf("@"));
+  let mailFirstLetter = mail[0];
+  let numMask = mail.length - 2;
+  let stars = "*".repeat(numMask);
+  let mailLastLetter = mail[mail.length - 1];
+  let domaine = email.slice(email.indexOf("@"));
+  return mailFirstLetter + stars+ mailLastLetter + domaine;
+}
+
+let email = "gustavo@gatomail.com";
+console.log(maskEmail(email));
+
+** end of script.js **
+
