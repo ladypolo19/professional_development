@@ -1,8 +1,0 @@
-** start of script.js **
-
-function convertCtoF(temperature) {
-  return temperature * (9/5) + 32
-}
-
-** end of script.js **
-
