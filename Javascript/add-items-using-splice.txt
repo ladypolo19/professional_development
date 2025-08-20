@@ -1,0 +1,11 @@
+** start of script.js **
+
+function htmlColorNames(arr) {
+  arr.splice(0, 2, "DarkSalmon", "BlanchedAlmond"); //elimina 2 a partir del index 0
+  return arr;
+}
+
+console.log(htmlColorNames(['DarkGoldenRod', 'WhiteSmoke', 'LavenderBlush', 'PaleTurquoise', 'FireBrick']));
+
+** end of script.js **
+
