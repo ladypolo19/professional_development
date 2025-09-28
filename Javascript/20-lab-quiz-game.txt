@@ -1,0 +1,65 @@
+** start of script.js **
+
+let questions = [
+  {
+  category:'Travel',
+  question: 'What country have many tourist per year?',
+  choices: ['France', 'Italy', 'Spain'], 
+  answer: 'France',
+  },
+  
+  {
+  category:'Culture',
+  question: 'What is mother tongue in Italy?',
+  choices: ['Francais', 'Italian', 'English'], 
+  answer: 'Italian',
+  },
+
+  {
+  category:'Math',
+  question: 'What is 2+2?',
+  choices: ['5', '3', '4'], 
+  answer: '4',
+  },
+
+  {
+  category:'Sports',
+  question: 'What is the sport that M. Schumarcher won 7 titles?',
+  choices: ['F1', 'Tenis', 'Golf'], 
+  answer: 'F1',
+  },
+
+  {
+  category:'Biology',
+  question: 'What is the name of wolf?',
+  choices: ['Can', 'Camel', 'Canis lupus'], 
+  answer: 'Canis lupus',
+  }
+
+  ]
+
+function getRandomQuestion(arr) {
+  if (arr.length === 0) {
+    console.log("No questions available");
+  } else {
+    let randNumber=Math.floor(Math.random() * arr.length);
+    let randQuestion=arr[randNumber];
+    return randQuestion;
+  }
+}
+
+function getRandomComputerChoice(choicesArray) {
+   const randomIndex = Math.floor(Math.random() * choicesArray.length);
+  return choicesArray[randomIndex]
+}
+
+function getResults(arr, choicesArr) {
+   if (arr.answer === choicesArr) {
+    return "The computer's choice is correct!";
+  } else {
+    return `The computer's choice is wrong. The correct answer is: ${arr.answer}`;
+  };
+}
+
+** end of script.js **
+
