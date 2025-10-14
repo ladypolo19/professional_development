@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Video Compilation Page</title>
+</head>
+
+<body>
+    <main>
+        <h1>Cat cute videos</h1>
+        <p>These are the cutest talking cat videos on youtube!</p>
+
+        <section>
+            <h2>Two tuxedo cats talking patiently</h2>
+            <p>This video shows a pair of cats talking, according to the owner, these two partners do not get along very well. It was a unique moment.</p>
+            <iframe src="https://youtube.com/embed/z3U0udLH974?si=gQ29Z3c5t5Otnm0x" title="Two tuxedo cats talking" height="315" width="560">
+            </iframe>
+        </section>
+
+        <section>
+            <h2>Cats spekaking english</h2>
+            <p>This compilation of several cat speaking  videos.</p>
+            <iframe src="https://www.youtube.com/embed/9feKxDRY4zs?si=alk2mczqAyTm79Jn" title="Compilation cat video" height="315" width="560">
+            </iframe>
+        </section>
+
+        <section>
+            <h2>Orange Cat talking softly</h2>
+            <p>A cute and polite orange kitty asking for permission.</p>
+            <iframe src="https://www.youtube.com/embed/-dTa8gchZfc?si=gnHgxF2S5HZvhGFB" title="Youtube video player" height="315" width="560">
+            </iframe>
+        </section>
+
+    </main>
+</body>
+
+</html>
