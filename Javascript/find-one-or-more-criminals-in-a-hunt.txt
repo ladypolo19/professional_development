@@ -1,0 +1,6 @@
+** start of script.js **
+
+let reCriminals = /C+/; // C verifica los criminales
+
+** end of script.js **
+

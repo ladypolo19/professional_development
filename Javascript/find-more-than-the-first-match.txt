@@ -1,0 +1,8 @@
+** start of script.js **
+
+let twinkleStar = "Twinkle, twinkle, little star";
+let starRegex = /Twinkle/gi; // flag para buscar patrones
+let result = twinkleStar.match(starRegex); // prueba
+
+** end of script.js **
+
