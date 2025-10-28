@@ -1,0 +1,10 @@
+** start of script.js **
+
+function Dog() {
+  this.name = "Gustavo";
+  this.color = "Grey";
+  this.numLegs = 4;
+}
+
+** end of script.js **
+
