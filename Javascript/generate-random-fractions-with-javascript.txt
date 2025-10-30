@@ -1,0 +1,14 @@
+** start of script.js **
+
+function randomFraction() {
+ 
+  let result = 0;
+    while (result === 0) {
+    result = Math.random();
+  }
+
+  return result;
+}
+
+** end of script.js **
+
