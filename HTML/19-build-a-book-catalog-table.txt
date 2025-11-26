@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Catalog</title>
+</head>
+
+<body>
+  <table>
+    <caption>Book catalog table 2025</caption>
+    
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Genre</th>
+        <th>Publication Year</th>
+      </tr>
+    </thead>
+    
+    <tbody>
+      <tr>
+        <td>Silmarillion</td>
+        <td>J. R. Tolkien</td>
+        <td>Fantasy</td>
+        <td>1977</td>
+      </tr>
+      
+      <tr>
+        <td>The tunnel</td>
+        <td>Ernesto Sabato</td>
+        <td>Police</td>
+        <td>1948</td>
+      </tr>
+
+      <tr>
+        <td>Alice in Wonderland</td>
+        <td>C. S. Lewis</td>
+        <td>Fantasy</td>
+        <td>1865</td>
+      </tr>
+
+      <tr>
+        <td>First Man</td>
+        <td>Albert Camus</td>
+        <td>Phislosophy</td>
+        <td>1995</td>
+      </tr>
+
+      <tr>
+        <td>La noche boca arriba</td>
+        <td>Julio Cortazar</td>
+        <td>Fantasy</td>
+        <td>1956</td>
+      </tr>
+    </tbody>
+
+    <tfoot>
+      <tr>
+        <td colspan="4">Total Books: 5</td>
+      </tr>
+    </tfoot>
+
+  </table>
+</body>
+
+</html>
