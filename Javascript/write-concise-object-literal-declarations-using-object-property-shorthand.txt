@@ -1,0 +1,10 @@
+** start of script.js **
+
+const createPerson = (name, age, gender) => {
+  // Only change code below this line
+  return ({ name, age, gender });
+  // Only change code above this line
+};
+
+** end of script.js **
+

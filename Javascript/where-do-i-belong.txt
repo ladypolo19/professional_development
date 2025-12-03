@@ -1,0 +1,10 @@
+** start of script.js **
+
+function getIndexToIns(arr, num) {
+  return arr.filter(val => num > val).length; //verifica el valor menor 
+}
+
+getIndexToIns([40, 60], 50);
+
+** end of script.js **
+
