@@ -1,0 +1,8 @@
+** start of script.js **
+
+const magic = () => {
+  return new Date();
+};
+
+** end of script.js **
+

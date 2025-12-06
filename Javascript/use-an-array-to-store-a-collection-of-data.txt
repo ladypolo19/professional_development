@@ -1,0 +1,16 @@
+** start of script.js **
+
+let yourArray = ['one', 2, true, 5, 6]; // Change this line
+
+/*Bonjour, 
+Je me permets, par la présente, de vous envoyer ma candidature pour le poste de Magasinier /Secrétaire en bibliothèque universitaire.
+En tant qu'étudiant en philosophie à l'université de Rennes, j'ai l'habitude de faire des présentations orales en français et en anglais, ce qui m'a permis de développer mes compétences en communication et en diplomatie.  
+Grâce à mes cinq années d'expérience dans le domaine des inventaires, je sais travailler avec ordre et rigueur à l'aide d'outils informatiques.
+Mon expérience comme moniteur de bibliothèque m'a permis d'interagir , d'accueillir et de conseiller le public en matière de recherche documentaire et d'utilisation des outils informatiques et d'impression, ainsi que de veiller au respect des règles de bon usage et d'entretien des installations et des ressources de la bibliothèque.
+
+J’espère sincèrement vous rencontrer prochainement à l’occasion d’un entretien, afin de vous exposer plus précisément mes motivations.
+
+Cordialement, Alexander */
+
+** end of script.js **
+
