@@ -1,0 +1,12 @@
+** start of script.js **
+
+function checkObj(obj, checkProp) {
+  if (obj.hasOwnProperty(checkProp)) {
+    return obj[checkProp];
+  } else {
+    return "Not Found";
+  }
+}
+
+** end of script.js **
+
