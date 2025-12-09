@@ -1,0 +1,28 @@
+** start of script.js **
+
+function uniteUnique(arr1, arr2, arr3) {
+  // array para el valor final
+  const finalArray = [];
+
+  // crea un loop de los argumentos
+  for (let i = 0; i < arguments.length; i++) {
+    const arrayArguments = arguments[i];
+
+    //recorre todo el array
+    for (let j = 0; j < arrayArguments.length; j++) {
+      let indexValue = arrayArguments[j];
+
+      // verifica si el valor final esta en el array
+      if (finalArray.indexOf(indexValue) < 0) {
+        finalArray.push(indexValue);
+      }
+    }
+  }
+
+  return finalArray;
+}
+
+uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]);
+
+** end of script.js **
+

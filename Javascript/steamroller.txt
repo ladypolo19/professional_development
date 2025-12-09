@@ -1,0 +1,22 @@
+** start of script.js **
+
+function steamrollArray(arr) {
+  const flattenedArray = [];
+  // loop en el array
+  for (let i = 0; i < arr.length; i++) {
+    if (Array.isArray(arr[i])) {
+      //va agregando a los array
+      flattenedArray.push(...steamrollArray(arr[i]));
+    } else {
+      //push los elementos que no estan en el array
+      flattenedArray.push(arr[i]);
+    }
+  }
+  return flattenedArray;
+};
+
+
+steamrollArray([1, [2], [3, [[4]]]]);
+
+** end of script.js **
+

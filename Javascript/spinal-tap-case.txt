@@ -1,0 +1,23 @@
+** start of script.js **
+
+function spinalCase(str) {
+  var regex = /\s+|_+/g;
+  /*
+  \s+: espacios en blanco (\s)
+  |: union "o"
+  _+: busca underscore (_)
+  g: para buscar en todo. */
+  str = str.replace(/([a-z])([A-Z])/g, "$1 $2");
+
+  /*([a-z]): (grupo 1= $1) letras min
+  ([A-Z]): (grupo 2= $2) busca may
+  /g: busca en todo
+  "$1 $2": inserta espacio entre grupo minúsculas ($1) y grupo mayúsculas ($2) */
+
+  return str.replace(regex, "-").toLowerCase();
+}
+
+spinalCase('This Is Spinal Tap');
+
+** end of script.js **
+

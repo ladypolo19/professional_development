@@ -1,0 +1,23 @@
+** start of script.js **
+
+function myReplace(str, before, after) {
+  //index
+  var index = str.indexOf(before);
+  //primera letra may o min
+  if (str[index] === str[index].toUpperCase()) {
+    // pon may
+    after = after.charAt(0).toUpperCase() + after.slice(1);
+  } else {
+    // minuscula
+    after = after.charAt(0).toLowerCase() + after.slice(1);
+  }
+  //nuevo string
+  str = str.replace(before, after);
+
+  return str;
+}
+
+myReplace("A quick brown fox jumped over the lazy dog", "jumped", "leaped");
+
+** end of script.js **
+

@@ -1,0 +1,8 @@
+** start of script.js **
+
+let haStr = "Hazzzzah";
+let haRegex = /Haz{4,}ah/; // contiene mas de 4 z
+let result = haRegex.test(haStr);
+
+** end of script.js **
+
