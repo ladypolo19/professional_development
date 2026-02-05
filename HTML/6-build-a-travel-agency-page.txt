@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Travel Agency Page</title>
+  <meta name="description" content="This is an example project of a Build a Travel Agency Page">
+</head>
+<body>
+  <h1>Our best travels destinations</h1>
+  <p>This is our most popular destinations to enjoy on your vacation in 2025.</p>
+  <h2>Packages</h2>
+  <p>This season you can visit the best beachs in the west french coast for groups travels and for the private tour our north french coast is more suitable.</p>
+    <ul>
+      <li><a href="https://www.freecodecamp.org/learn" target="_blank">Group Travels</a></li>
+      <li><a href="https://www.freecodecamp.org/learn" target="_blank">Private Tours</a></li>
+    </ul>
+  <h2>Top Itineraries</h2>
+  <figure>
+    <a href="https://www.freecodecamp.org/learn" target="_blank">Top 1<img src="https://cdn.freecodecamp.org/curriculum/labs/colosseo.jpg" alt="An image of Colosseo"></a>
+    <figcaption>Colosseo</figcaption>
+  </figure>
+  <figure>
+    <a href="https://www.freecodecamp.org/learn" target="_blank">Top 2<img src="https://cdn.freecodecamp.org/curriculum/labs/alps.jpg" alt="An image of Alps"></a>
+    <figcaption>Alps</figcaption>
+  </figure>
+  <figure>
+    <a href="https://www.freecodecamp.org/learn" target="_blank">Top 3<img src="https://cdn.freecodecamp.org/curriculum/labs/sea.jpg" alt="A beautiful sea"></a>
+    <figcaption>Sea</figcaption>
+  </figure>
+</body>  
+</html>
