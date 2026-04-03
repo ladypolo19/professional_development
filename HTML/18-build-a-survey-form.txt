@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+    
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please provide feedback on your activity here:</p>
+    
+    <form id="survey-form">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="name-label">Name:</label>
+        <input required 
+        id="name-label" 
+        type="text" 
+        name="name-label"
+        placeholder="Enter your name here">
+
+        <br>      
+
+        <label for="email-label">E-mail:</label>
+        <input required 
+        id="email" 
+        type="email" 
+        name="email"
+        size="25"
+        placeholder="Ex. johndoe@email.com">
+
+        <br>
+
+        <label for="number-label">Telephone number:</label>
+        <input id="number" 
+        type="number"
+        name="number" 
+        min="10" max="105" 
+        placeholder="Number">
+      </fieldset>
+
+      <fieldset>
+        <legend>Business information:</legend>
+        <label for="dropdown">Main Activity:</label>
+        <select id="dropdown" type="dropdown"> /*type no es necesario ya que no es un atributo de select*/
+            <option value="study">Study</option>
+            <option value="work">work</option>
+            <option selected value="not-to-say">Prefer not to say</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Why are you here?</legend>
+        <label for="hobby">Hobby</label>
+        <input 
+        type="checkbox"
+        id="hobby"
+        name="hobby"
+        value="hobby"/>
+
+        <label for="improve">Improve my knowledge</label>
+        <input 
+        checked
+        type="checkbox" 
+        id="improve" 
+        name="improve" 
+        value="improve" />
+
+        <label for="wasting">Wasting time</label>
+        <input
+        type="checkbox"
+        id="wasting"
+        name="wasting"
+        value="wasting"/>
+
+        <label for="free">It's free</label>
+        <input type="checkbox" 
+        id="free" 
+        name="free" 
+        value="free" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Will you continue coding?</legend>
+        <label for="yes-option">Yes</label>
+        
+        <input 
+        id="yes-option" 
+        type="radio" 
+        name="continue" 
+        value="continue" />
+        <label for="no-option">No</label>
+        
+        <input 
+        id="no-option" 
+        type="radio" 
+        name="continue" 
+        value="continue" />
+      </fieldset>
+      
+      <fieldset>
+        <legend>Comments:</legend>
+        <label for="comments">If you want to remark an activity or tell us something to improve our web:</label>
+        <textarea cols="50" rows="10" 
+        name="comments" id="comments"></textarea>
+      </fieldset>
+
+      <button id="submit">Submit</button>
+    </form>
+  
+  </body>
+</html>
