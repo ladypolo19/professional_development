@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Alexander Rodriguez - Magasinier BU</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap');
+        
+        :root {
+            --primary-blue: #1e3a8a; 
+            --text-dark: #1e2937;
+            --text-muted: #64748b;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f1f5f9;
+            color: var(--text-dark);
+            -webkit-print-color-adjust: exact;
+        }
+
+        .paper {
+            width: 210mm;
+            min-height: 297mm;
+            padding: 12mm 15mm;
+            margin: 2rem auto;
+            background: white;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            display: grid;
+            grid-template-columns: 210px 1fr;
+            gap: 35px;
+        }
+
+        h1, h2, h3 { font-family: 'Libre Baskerville', serif; }
+
+        .section-title {
+            color: var(--primary-blue);
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+
+        .sidebar {
+            background-color: #fcfcfc;
+            border-right: 1px solid #f1f5f9;
+            padding-right: 15px;
+        }
+
+        .skill-tag {
+            display: inline-block;
+            background: #eff6ff;
+            color: var(--primary-blue);
+            padding: 2px 7px;
+            border-radius: 4px;
+            font-size: 9px;
+            font-weight: 600;
+            border: 1px solid #dbeafe;
+            margin-bottom: 3px;
+        }
+
+        .valeur-ajoutee-footer {
+            border-top: 3px solid var(--primary-blue);
+            background-color: #f8fafc;
+            padding: 18px;
+            border-radius: 0 0 4px 4px;
+            /* Changement ici : marge manuelle pour casser l'équilibre */
+            margin-top: 40px; 
+        }
+
+        @media print {
+            body { background: white; margin: 0; }
+            .paper { margin: 0; box-shadow: none; width: 210mm; height: 297mm; }
+            .no-print { display: none; }
+        }
+
+        .btn-print {
+            position: fixed; bottom: 2rem; right: 2rem;
+            background: var(--primary-blue); color: white;
+            padding: 0.8rem 1.6rem; border-radius: 8px;
+            font-weight: 600; cursor: pointer; z-index: 50;
+            display: flex; align-items: center; gap: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <button onclick="window.print()" class="btn-print no-print">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9V2h12v7"></path><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+        Exporter en PDF
+    </button>
+
+    <div class="paper">
+        <aside class="sidebar py-2 flex flex-col space-y-8">
+            <div class="flex justify-center">
+                <div class="w-16 h-16 bg-blue-900 text-white flex items-center justify-center rounded-full text-xl font-serif border-4 border-blue-50">AR</div>
+            </div>
+
+            <section>
+                <h2 class="section-title text-[10px]">Contact</h2>
+                <div class="space-y-2 text-[10px] text-gray-600">
+                    <p>07 69 74 37 12</p>
+                    <p class="italic break-all text-blue-800 underline">alexanderkyas@gmail.com</p>
+                    <p>35700 Rennes, France</p>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="section-title text-[10px]">Langues</h2>
+                <div class="space-y-3 text-[10px]">
+                    <div class="flex justify-between">
+                        <span class="font-bold text-gray-400">ESPAGNOL</span>
+                        <span class="font-bold">NATIF</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="font-bold text-gray-400">FRANÇAIS</span>
+                        <span class="text-blue-800 font-bold italic">C1 EXPERT</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="font-bold text-gray-400">ANGLAIS</span>
+                        <span class="text-blue-800 font-bold">C1 TECH</span>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="section-title text-[10px]">Expertise</h2>
+                <div class="space-y-4">
+                    <div>
+                        <p class="text-[9px] font-bold text-gray-400 uppercase mb-1">Bibliothéconomie</p>
+                        <div class="flex flex-wrap gap-1">
+                            <span class="skill-tag">SIGB Koha</span>
+                            <span class="skill-tag italic">Récolement</span>
+                            <span class="skill-tag italic">Refoulement</span>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="text-[9px] font-bold text-gray-400 uppercase mb-1">Logistique & Qualité</p>
+                        <div class="flex flex-wrap gap-1">
+                            <span class="skill-tag">Gestion LIMS</span>
+                            <span class="skill-tag">SOP</span>
+                            <span class="skill-tag italic">Stocks</span>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="text-[9px] font-bold text-gray-400 uppercase mb-1">Digital & Data</p>
+                        <div class="flex flex-wrap gap-1">
+                            <span class="skill-tag">SQL</span>
+                            <span class="skill-tag">Office 365</span>
+                            <span class="skill-tag">Archivage</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+    <h2 class="section-title text-[10px]">Savoir-être</h2>
+    <ul class="text-[9px] text-gray-600 space-y-2 leading-relaxed italic">
+        <li>• Rigueur opérationnelle & précision</li>
+        <li>• Capacité d'analyse (cursus Master)</li>
+        <li>• Sens de l'accueil et du service public</li>
+    </ul>
+</section>
+
+            <section>
+                <h2 class="section-title text-[10px]">Normes & Data</h2>
+                <ul class="text-[9px] text-gray-600 space-y-3 leading-tight">
+                    <li class="pl-2 border-l-2 border-blue-800 italic">
+                        <strong>ISO/IEC 42001</strong><br>Management de l'IA.
+                    </li>
+                    <li class="pl-2 border-l-2 border-gray-300 italic">
+                        <strong>Relational Databases</strong><br>freeCodeCamp (En cours).
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h2 class="section-title text-[10px]">Engagement</h2>
+                <p class="text-[9px] text-gray-500 font-bold leading-relaxed italic">
+                    • FIFA Women's World Cup 2019<br>
+                    • Secours Populaire 35
+                </p>
+            </section>
+
+            <div class="mt-auto pt-4 border-t border-gray-100 text-[8px] text-gray-400 uppercase tracking-widest leading-tight">
+                Dossier BU Centre<br>Rennes, France
+            </div>
+        </aside>
+
+        <main class="flex flex-col py-2">
+            <header class="mb-10">
+                <h1 class="text-3xl font-bold text-gray-900 tracking-tight uppercase mb-1">Alexander RODRIGUEZ</h1>
+                <p class="text-[16px] text-blue-800 font-semibold tracking-widest border-b-2 border-blue-800 inline-block pb-1 uppercase mb-6">Magasinier de Bibliothèque Universitaire</p>
+                <p class="text-[12px] text-gray-700 leading-relaxed italic">
+                    Diplômé de l'Université de Rennes, je dispose d'une expérience directe au sein du <strong>Service Commun de la Documentation (SCD)</strong>. Maîtrise du logiciel <strong>Koha</strong> et rigueur opérationnelle issue de contextes exigeants, j'assure l'intégrité des fonds et un accueil de qualité.
+                </p>
+            </header>
+
+            <section class="mb-12">
+                <h2 class="section-title">Parcours Professionnel</h2>
+                <div class="space-y-8">
+                    <div>
+                        <div class="flex justify-between items-baseline mb-1">
+                            <h3 class="font-bold text-gray-900 text-[13px] italic">Moniteur de Bibliothèque (SCD) — BU Beaulieu</h3>
+                            <span class="text-[10px] font-bold text-blue-800 uppercase">2018 — 2020</span>
+                        </div>
+                        <p class="text-[10px] text-blue-800 font-bold mb-2 uppercase tracking-wide">Université de Rennes</p>
+                        <ul class="text-[11px] text-gray-700 space-y-1.5 ml-1">
+                            <li class="flex items-start gap-2"><span class="text-blue-800 font-bold">›</span> Utilisation du <strong>SIGB Koha</strong> : gestion des prêts, retours et inscriptions.</li>
+                            <li class="flex items-start gap-2"><span class="text-blue-800 font-bold">›</span> Manutention : rangement, <strong>récolement</strong> et <strong>refoulement</strong> des collections.</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between items-baseline mb-1">
+                            <h3 class="font-bold text-gray-900 text-[13px] italic text-gray-600">Employé Logistique E-commerce — Intermarché</h3>
+                            <span class="text-[10px] font-bold text-gray-400 uppercase">2024 — Actuel</span>
+                        </div>
+                        <p class="text-[10px] text-gray-400 font-bold mb-2 uppercase tracking-wide">SDEVADIS Rennes</p>
+                        <ul class="text-[11px] text-gray-700 space-y-1.5 ml-1">
+                            <li class="flex items-start gap-2"><span class="text-gray-400 font-bold">›</span> Optimisation des flux et <strong>fiabilisation des stocks</strong> informatisés.</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between items-baseline mb-1">
+                            <h3 class="font-bold text-gray-900 text-[13px] italic text-gray-600">Technicien de Laboratoire — ITGA</h3>
+                            <span class="text-[10px] font-bold text-gray-400 uppercase">2022 — 2023</span>
+                        </div>
+                        <p class="text-[10px] text-gray-400 font-bold mb-2 uppercase tracking-wide">Saint-Grégoire</p>
+                        <ul class="text-[11px] text-gray-700 space-y-1.5 ml-1">
+                            <li class="flex items-start gap-2"><span class="text-gray-400 font-bold">›</span> <strong>Traçabilité</strong> via système <strong>LIMS</strong> et application de protocoles (SOP).</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between items-baseline mb-1">
+                            <h3 class="font-bold text-[13px] italic text-gray-900">Chef d'équipe Inventoriste — RGIS Inventory</h3>
+                            <span class="text-[10px] font-bold text-gray-400 uppercase">2018 — 2021</span>
+                        </div>
+                        <p class="text-[10px] text-gray-400 font-bold mb-2 uppercase tracking-wide">Cesson-Sevigné</p>
+                        <ul class="text-[11px] text-gray-700 space-y-1.5 ml-1">
+                            <li class="flex items-start gap-2"><span class="text-gray-400 font-bold">›</span> <strong>Audit</strong> et contrôle de fiabilité de bases de données logistiques massives.</li>
+                            <li class="flex items-start gap-2"><span class="text-gray-400 font-bold">›</span> <strong>Coordination</strong> d'équipes terrain pour la précision des inventaires.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mb-6">
+                <h2 class="section-title">Formation</h2>
+                <div class="space-y-3">
+                    <div class="flex justify-between items-baseline text-[11px]">
+                        <span><strong>Master 1 Philosophie Recherche (NOMOS)</strong> | Univ. Rennes</span>
+                        <span class="font-bold text-blue-800">2021</span>
+                    </div>
+                    <div class="flex justify-between items-baseline text-[11px]">
+                        <span><strong>Licence de Philosophie</strong> | Univ. Rennes</span>
+                        <span class="font-bold text-blue-800">2018-2020</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="valeur-ajoutee-footer">
+                <h2 class="text-[10px] font-bold text-blue-900 uppercase tracking-widest mb-2 italic">Valeur Ajoutée</h2>
+                <p class="text-[11px] text-blue-900 leading-relaxed">
+                    "Ma force réside dans une double compétence : la maîtrise technique des outils documentaires associée à une rigueur d'analyse académique. Cette polyvalence me permet d'assurer une gestion de fonds précise et adaptée aux exigences du milieu universitaire."
+                </p>
+            </section>
+        </main>
+    </div>
+
+</body>
+</html>
