@@ -1,0 +1,49 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multimedia Player</title>
+  <style>
+    * {
+    background-color: aliceblue;
+    color: navy;
+    }
+    h2 {
+    font-style: italic;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Multimedia Player </h1>
+  <section>
+    <h2>FCC Track</h2>
+    <audio controls aria-label="Sail away">
+    <source src="https://cdn.freecodecamp.org/curriculum/js-music-player/sailing-away.mp3" type="audio/mp3">
+    </audio>
+  </section>
+  <section>
+    <h2>Video player</h2>
+    <video width="560" height="315" controls arial-label="rain sound and a cat">
+      <source src="my_rainvideo.mp4" type="video/mp4">
+      <track src="fgsubtitles_en.vtt" kind="subtitles" srclang="en" label="English">
+    </video>
+    
+  </section>
+  <section>
+    <h2>Transcript</h2>
+    <p>
+      [rain sound] <br>
+      Meow
+    </p>
+  </section>
+
+</body>
+
+</html>
+
+** end of index.html **
+
