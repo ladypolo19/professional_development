@@ -1,0 +1,131 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Technical Documentation Page - HTML Basic</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <nav id="navbar">
+      <header class="bold">HTML Media</header>
+      <p>Multimedia on the web is sound, music, videos, movies, and animations.</p>
+    <p><a class="nav-link" href="#HTML_Media">HTML Media</a></p>
+    <p><a class="nav-link" href="#HTML_Video">HTML Video</a></p>
+    <p><a class="nav-link" href="#HTML_Audio">HTML Audio</a></p>
+    <p><a class="nav-link" href="#HTML_Plug-ins">HTML Plug-ins</a></p>
+    <p><a class="nav-link" href="#HTML_YouTube">HTML YouTube</a></p>
+
+    </nav>
+    
+    <main id="main-doc">
+      <section class="main-section" id="HTML_Media">
+        <header class="bold">HTML Media</header>
+        <p>Multimedia comes in many different formats. It can be almost anything you can hear or see, like images, music, sound, videos, records, films, animations, and more.</p>
+        <p>The first web browsers had support for text only, limited to a single font in a single color.</p>
+        <p>Multimedia elements (like audio or video) are stored in media files. Multimedia files have formats and different extensions like: .wav, .mp3, .mp4, .mpg, .wmv, and .avi.</p>
+      </section>
+      <section class="main-section" id="HTML_Video">
+        <header class="bold">HTML Video</header>
+        <p>The HTML <code>< video ></code> element is used to show a video on a web page.</p>
+        <p>To show a video in HTML, use the <code>< video ></code> element:</p>
+        <code> 
+        <p>< video width="320" height="240" controls ></p>
+        </code>
+        <code>
+        <p>< source src="movie.mp4" type="video/mp4" ></p>
+        </code>
+        <code>
+        <p>< source src="movie.ogg" type="video/ogg" ></p>
+        </code>
+<p>Your browser does not support the video tag.</p>
+        <code><p>< /video ></p>
+        </code>
+        <p>The controls attribute adds video controls, like play, pause, and volume.</p>
+        <p>Attributes:</p>
+        <ul>
+          <li>Autoplay</li>
+          <li>Muted</li>
+        </ul>
+      </section>
+
+      <section class="main-section" id="HTML_Audio">
+        <header class="bold">HTML Audio</header>
+        <p>The HTML < audio > element is used to play an audio file on a web page.</p>
+        <p>To play an audio file in HTML, use the < audio > element:</p>
+        <code><p>< audio controls ></code></p>
+        <code><p>< source src="horse.ogg" type="audio/ogg" ></p></code>
+        <code><p>< /audio ></code></p>
+        
+        <p>HTML Audio Tags:</p>
+        <ul>
+          <li><code>< audio ></code></li>
+          <li><code>< source ></code></li>
+        </ul>
+      </section>
+      
+      <section class="main-section" id="HTML_Plug-ins">
+        <header class="bold">HTML Plug-ins</header>
+        <p>Plug-ins are computer programs that extend the standard functionality of the browser.</p>
+        <p>Plug-ins were designed to be used for many different purposes:</p>
+        <ul>
+          <li>To run Java applets</li>
+          <li>To run Microsoft ActiveX controls</li>
+          <li>To display Flash movies</li>
+          <li>To display maps</li>
+          <li>To scan for viruses</li>
+          <li>To verify a bank id</li>
+        </ul>
+      </section>
+
+      <section class="main-section" id="HTML_YouTube">
+        <header class="bold">HTML YouTube</header>
+        <p>The easiest way to play videos in HTML, is to use YouTube.</p>
+        <p>YouTube will display an id (like tgbNymZ7vqY), when you save (or play) a video.You can use this id, and refer to your video in the HTML code.</p>
+        <p>You can let your video start playing automatically when a user visits the page, by adding <code>< autoplay=1 ></code> to the YouTube URL. However, automatically starting a video is annoying for your visitors!</p>
+      </section>  
+      <p>All the information is from: <a href="https://www.w3schools.com/html/html_media.asp">W3Schools</a></p>
+    </main>
+  </body>
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+@media screen and (min-width: 768px) {
+  /* Styles for screens at least 768px wide */
+  scroll-behavior: smooth;
+}
+
+* {
+background-color: aliceblue;
+color: navy;
+font-family: sans-serif;
+}
+
+body {
+  display:flex; 
+}
+
+nav {
+  position: fixed;
+  top: 30px;
+  left: 0;
+  height: 100%;
+  width: 190px;
+}
+
+main {
+  margin-left: 200px; 
+  padding: 20px 40px 0 20px;
+}
+
+.bold {
+  font-weight: 800;
+}
+
+** end of styles.css **
+
